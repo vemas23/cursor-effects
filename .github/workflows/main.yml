@@ -27,7 +27,7 @@ jobs:
       
     - name: Commit built files
       run: |
-        git checkout -b dist
+        git checkout -b dist -f
         git add dist/
         git commit -m "Update dist"
         git push origin dist
