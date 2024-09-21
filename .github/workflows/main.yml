@@ -27,6 +27,8 @@ jobs:
       
     - name: Commit built files
       run: |
+        git config --global user.email "128408040+vemas23@users.noreply.github.com"
+        git config --global user.name "John Doe"
         git checkout -b dist -f
         git add dist/
         git commit -m "Update dist"
